@@ -13,9 +13,11 @@ namespace JSONDemo
             
             Console.WriteLine("Hello World!");
 
-            foreach(var keys in jsonObject)
+            foreach(var kp in jsonObject)
             {
-                //Console.WriteLine("Hello World!" + jsonObject.key);
+                var key = kp.Key;
+                var value = kp.Value;
+                Console.WriteLine($"{key}: {value}");
             }
 
             Console.ReadLine();
